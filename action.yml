@@ -19,6 +19,8 @@ inputs:
     description: 'Used to specify the path to a dependency file - go.sum'
   architecture:
     description: 'Target architecture for Go to use. Examples: x86, x64. Will use system architecture by default.'
+  cache-key-suffix:
+    description: Used to specify a suffix for the cache key. Useful for workflows with multiple jobs, such as build, test & lint.
 outputs:
   go-version:
     description: 'The installed Go version. Useful when given a version range as input.'
